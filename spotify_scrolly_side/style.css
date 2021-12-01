@@ -75,6 +75,7 @@ nav {
   margin: 1rem auto;
   text-align: center;
   background: #000000;
+  margin-bottom: 100px;
 }
 
 .intro__hed {
@@ -94,10 +95,6 @@ nav {
   color: #06bf7f;
 }
 
-#intro {
-  margin-bottom: 100px;
-  background: #000000;
-}
 
 #gap {
   height: 400px;
