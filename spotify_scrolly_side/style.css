@@ -88,6 +88,12 @@ nav {
   color: #8a8a8a;
 }
 
+.intro__p {
+  font-size: 1.75em;
+  margin: 2rem auto 0.5rem auto;
+  color: #06bf7f;
+}
+
 #intro {
   margin-bottom: 100px;
   background: #000000;
@@ -95,6 +101,10 @@ nav {
 
 #gap {
   height: 400px;
+}
+
+#big_gap {
+  height: 800px;
 }
 
 #outro {
