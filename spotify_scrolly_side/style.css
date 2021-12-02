@@ -95,13 +95,16 @@ nav {
   color: #06bf7f;
 }
 
+#small_gap {
+  height: 300px;
+}
 
 #gap {
   height: 400px;
 }
 
 #big_gap {
-  height: 800px;
+  height: 600px;
 }
 
 #outro {
