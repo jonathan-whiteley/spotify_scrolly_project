@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>How has the pandemic changed the types of popular music we listen to?</title>
+    <meta name="description" content="How has the pandemic changed the types of popular music we listen to?" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="vendor/aos.css" rel="stylesheet">
+
+    <style>
+      /* Scrolly Intro */
+      #scrolly {
+        position: relative;
+        background-color: #000000;
+        padding: 1rem;
+      }
+
+      
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        background-color: #000000;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: url('images/music.jpg'); */
+        background-size: cover;
+
+      }
+
+      .sticky-thing p {
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        opacity: 0.2;
+      }
+
+      .step:last-child {
+        margin-bottom: 0;
+      }
+
+      .step.is-active {
+        background-color:#06bf7f;
+        color: #080808;
+        opacity: 1;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 2.2rem;
+      }
+
+      /* Scrolly 1 */
+
+      #scrolly_1 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #070000;
+        padding: 1rem;
+      }
+
+      #scrolly_1 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #observablehq-chart3-f7536c4c {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+      #observablehq-viewof-stack-f7536c4c {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      article_1 {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing_1 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0 0 0 50px;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: inline;
+        /* align-items: center;
+        justify-content: center; */
+      }
+
+      .sticky-thing_1 p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: rgb(5, 5, 5);
+      }
+
+      .step_1 {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        opacity: 0.2;
+        
+      }
+
+      .step_1:last-child {
+        margin-bottom: 0;
+      }
+
+      .step_1.is-active {
+        background-color:#06bf7f;
+        color: #080808;
+        opacity: 1;
+      }
+
+      .step_1 p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        
+      }
+
+/* Scrolly 2 */
+      #scrolly_2 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #070707;
+        padding: 1rem;
+      }
+
+      #scrolly_2 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #observablehq-chart2-d64a98e1 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        /* animation: enter-right 2s ease-out 10s; */
+      }
+
+      #observablehq-key2-d64a98e1 {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      #observablehq-key3-d64a98e1 {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      article_2 {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing_2 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0px 50px;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: inline;
+        /* align-items: center;
+        justify-content: center; */
+      }
+
+      .sticky-thing_2 p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step_2 {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        opacity: 0.2;
+      }
+
+      .step_2:last-child {
+        margin-bottom: 0;
+      }
+
+      .step_2.is-active {
+        background-color:#06bf7f;
+        color: #080808;
+        opacity: 1;
+      }
+
+      .step_2 p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+
+/* Scrolly 3 */
+      #scrolly_3 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #070707;
+        padding: 1rem;
+      }
+
+      #scrolly_3 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #viz1638328411540 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        /* animation: enter-right 2s ease-out 10s; */
+      }
+
+      #gg {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      article_3 {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing_3 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0 50px;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: inline;
+        /* align-items: center;
+        justify-content: center; */
+      }
+
+      .sticky-thing_3 p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step_3 {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        opacity: 0.2;
+      }
+
+      .step_3:last-child {
+        margin-bottom: 0;
+      }
+
+      .step_3.is-active {
+        background-color:#06bf7f;
+        color: #080808;
+        opacity: 1;
+      }
+
+      .step_3 p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+/* Scrolly 4 */
+      #scrolly_4 {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #000000;
+        padding: 1rem;
+      }
+
+      #scrolly_4 > * {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      #observablehq-viewof-KPIs-d3248aef {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        /* animation: enter-right 2s ease-out 10s; */
+      }
+
+      #observablehq-chart-d3248aef {
+        /* position: -webkit-sticky;
+        position: sticky; */
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      article_4 {
+        position: relative;
+        padding: 0 1rem;
+        max-width: 20rem;
+      }
+
+      .sticky-thing_4 {
+        position: -webkit-sticky;
+        position: sticky;
+        width: 100%;
+        margin: 0 100px;
+        z-index: 0;
+        top: 12.5vh;
+        height: 75vh;
+        /* Center everything inside */
+        display: inline;
+        /* align-items: center;
+        justify-content: center; */
+      }
+
+      .sticky-thing_4 p {
+        padding: 1rem;
+        font-size: 8rem;
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step_4 {
+        margin: 0 auto 2rem auto;
+        background-color: #3b3b3b;
+        color: #fff;
+        opacity: 0.2;
+      }
+
+      .step_4:last-child {
+        margin-bottom: 0;
+      }
+
+      .step_4.is-active {
+        background-color:#06bf7f;
+        color: #080808;
+        opacity: 1;
+      }
+
+      .step_4 p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <!-- <a href="https://github.com/russellgoldenberg/scrollama">scrollama.js</a> -->
+        <div class="nav__examples">
+          <a href="sticky-side.html"><b>Scrolly</b></a>
+          <a href="about.html"><b>About</b></a>
+        </div>
+      </nav>
+
+      <section id="small_gap"></section>
+
+      <section id="intro">
+        <h1 class="intro__hed" data-aos="fade-up" data-aos-delay="200">
+          <b>How has the pandemic changed the types of popular music we listen to?</b></h1>
+        <p class="intro__dek" data-aos="fade-up" data-aos-delay="400"> 
+          Start scrolling to find out.</p>
+      </section>
+
+<!-- Scrolly 0 Intro Paragraphs-->
+
+      <section id="scrolly">
+        <div class="sticky-thing"></div>
+
+        <article>
+          <div class="step" data-aos="fade-right" data-aos-delay="300">
+            <p>Throughout the ebbs and flows of the COVID-19 pandemic, music has remained a critical piece of how humans express, process, and cope with emotions.</p>
+          </div>
+          <div class="step" data-aos="fade-left" data-aos-delay="600">
+            <p>Using <b>Spotify’s Developer API</b> and <b>Spotify’s Global Top 200 Charts</b>, we analyzed ways in which the pandemic has affected the types of music we consumed.</p>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="800">
+            <p>With March 2020 as the inflection point between pre and post-COVID (when the WHO officially declared a pandemic), we explored questions around shifts in genres, artists, songs, and listening trends.</p>
+          </div>
+
+        </article>
+      </section>
+
+<!-- Simple Intro Paragraphs-->
+
+      <!-- <section id="intro" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="intro__p">Throughout the ebbs and flows of the pandemic, music has remained as a critical piece of how humans express, process, and cope with emotions. 
+          <br>
+      </section>
+
+      <section id="intro" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="intro__p">Using Spotify’s Developer API and Spotify’s Global Top 200 Charts, we analyzed ways in which the pandemic has affected the types of music we consumed.</h2>
+      </section> -->
+
+      <section id="gap"></section>
+
+      <section id="intro" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="intro__p"><b>1. Generally the most popular genres stayed popular...</b></h2>
+      </section>
+
+
+      <section id="scrolly_1" data-aos="fade-up" data-aos-delay="200">
+        <article_1>
+          <div class="step_1">
+            <p>With an overview of the genres that make up the daily Top 200 Charts, we see a pretty consistent breakdown over the last 4 years. <b>Hip hop/rap </b> and <b>edm </b>tracks consistently dominate.</p>
+          </div>
+          <div class="step_1">
+            <p>However, by separating out each genre, we see upward trends in <b>pop </b> and <b>latino </b> music in early 2020, coinciding with periods of isolation for many people as stay at home orders were imposed across the world.</p>
+          </div>
+        </article_1>
+
+        <div class="sticky-thing_1" data-aos="fade-up" data-aos-delay="200">
+          <div id="observablehq-viewof-stack-f7536c4c"></div>
+          <br>
+          <div id="observablehq-chart3-f7536c4c"></div>
+          <div id="observablehq-key2-d64a98e1"></div>
+        </div>
+      </section>
+
+      <section id="gap"></section>
+
+      <section id="intro" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="intro__p"><b>2. We listened to more pop and latino music...</b></h2>
+      </section>
+      
+      <section id="scrolly_2" data-aos="fade-up" data-aos-delay="200">
+        <article_2>
+          <div class="step_2" >
+            <p>In 2020 we sampled more new music. In fact, 294 more distinct songs charted in 2020 than 2019, largely driven by the increase in new pop and latino songs. </p>
+          </div>
+          <div class="step_2" >
+            <p>With the pandemic driving many to relocate, we see an increased appetite for new music coincide with shifts in lifestyles.</p>
+          </div>
+          <div class="step_2" >
+            <p>We can also see the individual songs across each genre and their associated chart date.</p>
+          </div>
+        </article_2>
+
+        <div class="sticky-thing_2" data-aos="fade-up" data-aos-delay="200">
+
+          <div id="observablehq-chart2-d64a98e1"></div>
+          <div id="observablehq-key3-d64a98e1"></div>
+
+        </div>
+      </section>
+
+      <section id="gap"></section>
+
+      <section id="intro" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="intro__p"><b>3. We listened to more unique songs and artists...</b></h2>
+      </section>
+
+      <section id="scrolly_3" data-aos="fade-up" data-aos-delay="200">
+        <article_3>
+          <div class="step_3" data-step="1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_3" data-step="2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_3" data-step="3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_3" data-step="4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </article_3>
+
+        <div class="sticky-thing_3" data-aos="fade-up" data-aos-delay="200">
+
+          <div class='tableauPlaceholder' id='viz1638328411540' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DarkThemedArtistandSongChurn&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DarkThemedArtistandSongChurn&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DarkThemedArtistandSongChurn&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+
+        </div>
+      </section>
+
+      <section id="gap"></section>
+
+      <section id="intro" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="intro__p"><b>4. We listened to happier songs, with less lyrics...</b></h2>
+      </section>
+      
+      <section id="scrolly_4" data-aos="fade-up" data-aos-delay="200">
+        <article_4>
+          <div class="step_4" data-step="1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_4" data-step="2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_4" data-step="3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="step_4" data-step="4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </article_4>
+
+        <div class="sticky-thing_4" data-aos="fade-up" data-aos-delay="200">
+          <div id="observablehq-viewof-KPIs-d3248aef"></div>
+          <br>
+          <div id="observablehq-chart-d3248aef"></div>
+        
+        </div>
+      </section>
+
+      <section id="big_gap"></section>
+
+
+      <section id="outro" data-aos="fade-up" data-aos-delay="200">
+        <p class="intro__dek">
+          Here are our final thoughts and takeaways.
+          <br> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates distinctio quia voluptate similique nesciunt ullam at. Vitae reiciendis enim commodi ullam labore veritatis officia numquam, suscipit perferendis reprehenderit laudantium!
+        </p>
+      </section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="vendor/aos.js"></script>
+    <script src="main.js"></script>
+
+<!-- Stacked bar -->
+
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/716674b6450258d9.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "chart3") return new Inspector(document.querySelector("#observablehq-chart3-f7536c4c"));
+        if (name === "viewof stack") return new Inspector(document.querySelector("#observablehq-viewof-stack-f7536c4c"));
+        return ["update"].includes(name);
+      });
+    </script>
+
+<!-- Incidence plot bar -->
+
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/6b86b672ff964b1e.js?v=3";
+      new Runtime().module(define, name => {
+        if (name === "chart2") return new Inspector(document.querySelector("#observablehq-chart2-d64a98e1"));
+        if (name === "key2") return new Inspector(document.querySelector("#observablehq-key2-d64a98e1"));
+        if (name === "key3") return new Inspector(document.querySelector("#observablehq-key3-d64a98e1"));
+      });
+      </script>
+
+<!-- Bubble plot -->            
+
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1638328411540');
+var vizElement = divElement.getElementsByTagName('object')[0];
+if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+<!-- Radial plot -->
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/f3ce6c04b1d3423e.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-d3248aef"));
+  if (name === "viewof KPIs") return new Inspector(document.querySelector("#observablehq-viewof-KPIs-d3248aef"));
+  return ["filtered_data","data0","rawdata","data","y","yAxis","line","area","diff_data","data1"].includes(name);
+});
+</script>
+
+  </body>
+</html>
