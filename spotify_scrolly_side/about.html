@@ -7,6 +7,7 @@
     <meta name="description" content="About Our Project" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link href="vendor/aos.css" rel="stylesheet">
     <style>
       #scrolly {
         position: relative;
@@ -16,18 +17,13 @@
         position: relative;
         padding: 0 1rem;
         margin: 0 auto;
-        width: 33%;
+        width: 50%;
       }
 
       .step {
         margin: 2rem auto 4rem auto;
-        background-color: #3b3b3b;
-        color: #fff;
-      }
-
-      .step.is-active {
-        background-color: goldenrod;
-        color: #3b3b3b;
+        background-color:#080808;
+        color: #06bf7f;
       }
 
       .step p {
@@ -35,6 +31,8 @@
         padding: 1rem;
         font-size: 1.5rem;
       }
+
+      
     </style>
   </head>
 
@@ -43,29 +41,46 @@
         <nav>
             <!-- <a href="https://github.com/russellgoldenberg/scrollama">scrollama.js</a> -->
             <div class="nav__examples">
-              <a href="sticky-side.html"><b>Scrolly</b></a>
-              <a href="about.html"><b>About</b></a>
+                <a href="index.html"><b>Scrolly</b></a>
+                <a href="about.html"><b>About</b></a>
             </div>
           </nav>
       <section id="intro">
-        <h1 class="intro__hed"><b>About our Project</b></h1>
+        <h1 class="intro__hed"><b>About Our Project</b></h1>
         <p class="intro__dek">
           Thanks for scrolling!
         </p>
       </section>
+      
       <section id="scrolly">
         <article>
-          <div class="step" data-step="1">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <h3>We built this visualization tool in order to help music fans like us explore how the COVID-19 Pandemic had altered our taste in music, if at all. When we started this project, we were curious to understand shifts in global listening preferences. Over the past two years, we noticed that feelings of stress and yearning brought on by health concerns, remote work, relocation, and isolation found their ways into many aspects of our lives. One aspect in particular was the shifts in our musical tastes.
+            </h3>
           </div>
-          <div class="step" data-step="2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <h3>More experimentation with different genres, returning to old classics, and turning to more relaxing, ambient music were changes we noticed in our own listening habits. We were eager to understand if this pattern was common, and curious in what other ways the pandemic might have changed global music preferences. After researching the question, we found that there had been little done to explore these questions with existing visualizations, so we built our own! </h3>
           </div>
-          <div class="step" data-step="3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <h3>In order to build this site, we relied on data publicly available through APIs. Spotify has the highest number of monthly active users across all distributed service providers in the music industry, and has a very robust API, which was the main data source for this project. Through the Spotify API we were able to compile lists of the Global Top 200 charts, by day and by country. We were also able to use their audio-features endpoint to compile details on specific song traits that could be analyzed, such as ‘danceability’. In order to accomplish the below tasks, specific to our users, we have built time series scales into each visualization so that users can compare trends before and after/during the pandemic. </h3>
           </div>
-          <div class="step" data-step="4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+          <div class="step" data-aos="fade-right" data-aos-delay="200">
+                <ol>
+                    <li><b>Compare the breakdown of songs on Top 200 charts across each genre.</b></li>
+                    <li><b> Compare the volume of unique songs on Top 200 charts and if artists released fewer tracks.</b></li>
+                    <li><b>Identify which song attributes changed the most across the Top 200.</b></li>
+                    <li><b>Compare the magnitude and duration of seasonality trends in song attributes.</b></li>
+                    <li><b>Enjoy!</b></li>
+                </ol>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <h3>We hope that fans and music heads like us can use our site to explore how the Coronavirus Pandemic has changed listening patterns on Spotify. 
+            </h3>
+          </div>
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <h3> <i>Created by: Jonathan Whiteley, Jessica Sacks, and Maria DiMedio</i> </h3>
           </div>
         </article>
       </section>
@@ -74,5 +89,18 @@
 
     <script src="https://unpkg.com/intersection-observer"></script>
     <script src="https://unpkg.com/scrollama"></script>
+    <script src="vendor/aos.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false
+            });
+        });
+    </script>
+
+
   </body>
 </html>

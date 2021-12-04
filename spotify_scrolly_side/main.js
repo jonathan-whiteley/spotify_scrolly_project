@@ -36,6 +36,20 @@
 
    // setup resize event
    window.addEventListener("resize", scroller.resize);
+
+   //TEST SCROLL
+ /**
+* Animation on scroll
+*/
+    window.addEventListener('load', () => {
+        AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false
+        });
+    });
+
  }
 
 var scrolly_1 = main.querySelector("#scrolly_1");
@@ -109,18 +123,7 @@ scroller_2
 // setup resize event
 window.addEventListener("resize", scroller_2.resize);
 
-//TEST SCROLL
- /**
-* Animation on scroll
-*/
-window.addEventListener('load', () => {
- AOS.init({
-   duration: 1000,
-   easing: "ease-in-out",
-   once: true,
-   mirror: false
- });
-});
+
 
 
 }
