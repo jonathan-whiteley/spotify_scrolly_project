@@ -97,13 +97,13 @@
         flex: 1;
       }
 
-      #observablehq-chart3-f7536c4c {
+      #observablehq-chart3-4cec4146 {
         /* position: -webkit-sticky;
         position: sticky; */
         width: 100%;
         margin: 10px 0;
       }
-      #observablehq-viewof-stack-f7536c4c {
+      #observablehq-viewof-stack-4cec4146 {
         /* position: -webkit-sticky;
         position: sticky; */
         width: 100%;
@@ -484,9 +484,9 @@
         </article_1>
 
         <div class="sticky-thing_1" data-aos="fade-up" data-aos-delay="200">
-          <div id="observablehq-viewof-stack-f7536c4c"></div>
+          <div id="observablehq-viewof-stack-4cec4146"></div>
           <br>
-          <div id="observablehq-chart3-f7536c4c"></div>
+          <div id="observablehq-chart3-4cec4146"></div>
           <div id="observablehq-key2-d64a98e1"></div>
         </div>
       </section>
@@ -503,10 +503,10 @@
             <p>In 2020 we sampled more new music. In fact, 294 more distinct songs charted in 2020 than 2019, largely driven by the increase in new pop and latino songs. </p>
           </div>
           <div class="step_2" >
-            <p>With the pandemic driving many to relocate, we see an increased appetite for new music coincide with shifts in lifestyles.</p>
+            <p>Hover over the chart to see if you recognize any of the individual songs across each genre and their associated chart date. 2021 data as of Sept 30, 2021.</p>
           </div>
           <div class="step_2" >
-            <p>Hover over the chart to see if you recognize any of the individual songs across each genre and their associated chart date.</p>
+            <p>With the pandemic driving many to relocate, we see an increased appetite for new music coincide with shifts in lifestyles throughout 2020.  </p>
           </div>
         </article_2>
 
@@ -579,11 +579,16 @@
 
       <section id="outro" data-aos="fade-up" data-aos-delay="400">
         <p class="intro__dek">
-          Here are our final thoughts and takeaways.
+          In what seemed to be a time when everything in our lives changed drastically, music remained a constant. 
           <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptates distinctio quia voluptate similique nesciunt ullam at. Vitae reiciendis enim commodi ullam labore veritatis officia numquam, suscipit perferendis reprehenderit laudantium!
+          <br>
+          However, it took on a new role for many of us and our tastes evolved as a result. This tool serves as a resource to anyone who shares our love of music and is keen to explore this evolution! 
+          <br>
+          <br>
+          To find out more about our project, visit our <a href="about.html"><b>About</b></a> page!
         </p>
       </section>
+      <section id="small_gap"></section>
     </main>
 
     <!-- <div class='debug'></div> -->
@@ -595,13 +600,14 @@
 <!-- Stacked bar -->
 
     <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import define from "https://api.observablehq.com/d/716674b6450258d9.js?v=3";
-      new Runtime().module(define, name => {
-        if (name === "chart3") return new Inspector(document.querySelector("#observablehq-chart3-f7536c4c"));
-        if (name === "viewof stack") return new Inspector(document.querySelector("#observablehq-viewof-stack-f7536c4c"));
-        return ["update"].includes(name);
-      });
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/716674b6450258d9.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "chart3") return new Inspector(document.querySelector("#observablehq-chart3-4cec4146"));
+      if (name === "trigger") return true;
+      if (name === "viewof stack") return new Inspector(document.querySelector("#observablehq-viewof-stack-4cec4146"));
+      return ["update"].includes(name);
+    });
     </script>
 
 <!-- Incidence plot bar -->
