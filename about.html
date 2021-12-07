@@ -22,11 +22,23 @@
 
       .step {
         margin: 2rem auto 4rem auto;
-        background-color:#080808;
+        background-color:#000000;
         color: #8a8a8a;
       }
 
       .step p {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+
+      .task {
+        margin: 2rem auto 4rem auto;
+        background-color:#000000;
+        color: #06bf7f;
+      }
+
+      .task p {
         text-align: center;
         padding: 1rem;
         font-size: 1.5rem;
@@ -64,15 +76,19 @@
             <h3>More experimentation with different genres, returning to old classics, and turning to more relaxing, ambient music were changes we noticed in our own listening habits. We were eager to understand if this pattern was common, and curious in what other ways the pandemic might have changed global music preferences. After researching the question, we found that there had been little done to explore these questions with existing visualizations, so we built our own! </h3>
           </div>
           <div class="step" data-aos="fade-up" data-aos-delay="200">
-            <h3>In order to build this site, we relied on data publicly available through APIs. Spotify has the highest number of monthly active users across all distributed service providers in the music industry, and has a very robust API, which was the main data source for this project. Through the Spotify API we were able to compile lists of the Global Top 200 charts, by day and by country. We were also able to use their audio-features endpoint to compile details on specific song traits that could be analyzed, such as ‘danceability’. In order to accomplish the below tasks, we have built time series scales into each visualization so that users can compare trends before and after/during the pandemic. </h3>
+            <h3>In order to build this site, we relied on data publicly available through Spotify's APIs. Spotify has the highest number of monthly active users across all distributed service providers in the music industry. Our song universe was scraped from the Global Top 200 charts, by day and by country for the last four years. In order to accomplish the below tasks, we incorporated a temporal component into each visualization so that users can compare trends before and after/during the pandemic. </h3>
           </div>
           
-          <div class="step" data-aos="fade-right" data-aos-delay="200">
+          <div class="task" data-aos="fade-right" data-aos-delay="200">
                 <ol>
                     <li><b>Compare the breakdown of songs on Top 200 charts across each genre.</b></li>
+                    <br>
                     <li><b> Compare the volume of unique songs on Top 200 charts and if artists released fewer tracks.</b></li>
+                    <br>
                     <li><b>Identify which song attributes changed the most across the Top 200.</b></li>
+                    <br>
                     <li><b>Compare the magnitude and duration of seasonality trends in song attributes.</b></li>
+                    <br>
                     <li><b>Enjoy!</b></li>
                 </ol>
           </div>
@@ -85,7 +101,7 @@
         </article>
       </section>
       <section id="outro">
-        <div class="step" data-aos="fade-up" data-aos-delay="200">
+        <div class="task" data-aos="fade-up" data-aos-delay="200">
             <h4> <i>Created by: Jonathan Whiteley, Jessica Sacks, and Maria DiMedio</i> </h4>
           </div>
       </section>
